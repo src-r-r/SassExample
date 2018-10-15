@@ -1,0 +1,18 @@
+{% load static sass_tags %}
+<!doctype html>
+<html>
+    <head>
+        <title>Django SASS Example!</title>
+        <link rel="stylesheet" href="{% sass_src 'spectre/peah.scss' %}">
+        <link rel="stylesheet" href="{% static 'spectre/spectre-icons.css' %}">
+    </head>
+    <body>
+        <p>The following should be colored green:</p>
+        <button class="btn btn-success">Do Something!</button>
+        <p>Here are some icons:</p>
+        <div>
+            <i class="icon icon-menu"></i>
+            <i class="icon icon-flag"></i>
+        </div>
+    </body>
+</html>
